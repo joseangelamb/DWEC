@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+    function abrirVentana(){
+        miVentana = window.open("","","width=1150, height=200, resizable=no");
+        miVentana.document.write("<h3>Jose Angel Ambrosio Gomez  -   123456789</h3>");
+        miVentana.document.write("<b>URL completa</b>: "+location.href + "<br/><br/>");
+        miVentana.document.write("<b>Protocolo</b>: "+ location.protocol + "<br/><br/>");
+        miVentana.document.write("<b>Nombre en código de navegador</b>: "+navigator.appCodeName+"; "+navigator.appName+"; "+navigator.appVersion+"; "+navigator.language+"; "+navigator.platform+"; "+navigator.userAgent+"<br/><br/>");
+        miVentana.document.write("<b>JAVA</b>: "+ navigator.javaEnabled());
+    }
+</script>
+</head>
+<body>
+    <p><button type="button" onclick="abrirVentana();">Abrir ventana</button></p>
+</body>
+</html>
